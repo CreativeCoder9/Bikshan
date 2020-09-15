@@ -389,14 +389,17 @@ body {
 }
 
 #particles-js .particles-js-canvas-el {
-  background-color: #f2f5fa;
-  background-image: url(../../assets/img/Dhan.jpg);
+  background-color: #fafbfd;
+  background-image: url(../../assets/img/Dhanwantari_checkup.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 120% 100%;
   max-width: 100%;
   height: auto;
   /*opacity: 0.7;*/
+}
+
+#particles-js {
 }
 
 @media (min-width: 576px) {
