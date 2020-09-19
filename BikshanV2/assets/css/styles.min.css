@@ -810,6 +810,50 @@ html {
   scroll-behavior: smooth;
 }
 
+#topbar {
+  background: #3089d6;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: white;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* #topbar .contact-info a:hover {  color: #1977cc;} */
+
+#topbar .contact-info i {
+  color: #ffffff;
+  padding-right: 4px;
+  margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: #ffffff;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+/* #topbar .social-links a:hover {  color: #1977cc;} */
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
 .bill-header {
   font-size: 12px;
   text-align: center;
@@ -880,6 +924,8 @@ html {
 
 #trs-hd {
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .bill-header.cs {
@@ -926,5 +972,9 @@ html {
 
 #counter-headeing {
   font-size: x-large;
+}
+
+table {
+  position: relative;
 }
 
