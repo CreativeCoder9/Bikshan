@@ -9,12 +9,14 @@
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 </head>
 
 <body style="background-size: cover;background-repeat: no-repeat;margin-top: 0px;"><nav class="navbar shadow navbar-light sticky-top navbar-expand-md navigation-clean">
@@ -160,13 +162,11 @@
     <!-- End rounded tabs -->
   </div>
   </div>
-
-</div>
 </div>
         </section>
         <section id="medical-tests" style="background-size: cover;padding-top: 0px;margin-top: -70px;">
             <hr id="all-tests" style="color: white; opacity:0;">
-            <div class="container" style="margin-bottom: 100px;">
+            <div class="container" id="table-container" style="margin-bottom: 100px;">
                 <div class="col-md-12 search-table-col">
                     <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control" placeholder="Search tests by typing here.." autocomplete="on"></div><span class="counter pull-right"></span>
                     <div class="table-responsive table-bordered shadow-lg table table-hover table-bordered results"
@@ -175,8 +175,8 @@
                             <thead class="bill-header cs">
                                 <tr>
                                     <th id="trs-hd" class="col-lg-1" style="padding-bottom: 17px;font-size: 17px;background-image: url(&quot;assets/img/26996.jpg&quot;);">TESTS AVAILABLE</th>
-                                    <th id="trs-hd" class="col-lg-2" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Serial no</th>
-                                    <th id="trs-hd" class="col-lg-3" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">wait time</th>
+                                    <th id="trs-hd" class="col-lg-2 hide-column" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Serial no</th>
+                                    <th id="trs-hd" class="col-lg-3 hide-column" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">wait time</th>
                                     <th id="trs-hd" class="col-lg-2" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Time takes</th>
                                     <th id="trs-hd" class="col-lg-2" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Special Requirement</th>
                                 </tr>
@@ -187,554 +187,554 @@
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Hemoglobin</td>
-                                    <td>1</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">1</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;padding-top: 20px;">TC, DC</td>
-                                    <td>2</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">2</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">ESR</td>
-                                    <td>3</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">3</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Malaria Parasites(MP)</td>
-                                    <td>4</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">4</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Widal Test</td>
-                                    <td>5</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">5</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">RBC / Platelate / Eosinophin</td>
-                                    <td>6</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">6</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">BT, CT</td>
-                                    <td>7</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">7</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Aldehyed Test</td>
-                                    <td>8</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">8</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">PCV</td>
-                                    <td>9</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">9</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Complete Hemogram</td>
-                                    <td>10</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">10</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Mantoux</td>
-                                    <td>11</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">11</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">ABO/Rh</td>
-                                    <td>12</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">12</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Sputam for AFB</td>
-                                    <td>13</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">13</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Sugar (PP) (F) / (R) Each</td>
-                                    <td>14</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">14</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">VDRL Test</td>
-                                    <td>15</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">15</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Skin Smears for AFB</td>
-                                    <td>16</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">16</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Seminal Fluid</td>
-                                    <td>17</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">17</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Urethral Smears</td>
-                                    <td>18</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">18</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Stool OPC (RE / ME)</td>
-                                    <td>19</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">19</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Vitamine D3, Vitamine B12 (Each)</td>
-                                    <td>20</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">20</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Stool (OPC + OBT)</td>
-                                    <td>21</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">21</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Urine (RE / ME)</td>
-                                    <td>22</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">22</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Urine,&nbsp; Stool,&nbsp; Swab, Pus</td>
-                                    <td>23</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">23</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">24 Hours Total Protein of Urine</td>
-                                    <td>24</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">24</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Absolute Eosinophilis Count</td>
-                                    <td>25</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">25</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">HBAC</td>
-                                    <td>26</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">26</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Trop-T</td>
-                                    <td>27</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">27</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Tiphy Dort</td>
-                                    <td>28</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">28</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Urine for Pregnancy</td>
-                                    <td>29</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">29</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Bloor Urea</td>
-                                    <td>30</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">30</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Cerum Creatinine</td>
-                                    <td>31</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">31</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serun Cholesterol</td>
-                                    <td>32</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">32</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Uric Acid</td>
-                                    <td>33</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">33</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Bilirubin</td>
-                                    <td>34</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">34</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum SGOT (AST) / (ALT)</td>
-                                    <td>35</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">35</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Alkaline Phosphate</td>
-                                    <td>36</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">36</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Triglycende (TG)</td>
-                                    <td>37</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">37</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Total Protein &amp; Albumin (Australia Antigen)</td>
-                                    <td>38</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">38</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Lipid Profile</td>
-                                    <td>39</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">39</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">LFT</td>
-                                    <td>40</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">40</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">ASO Titre</td>
-                                    <td>41</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">41</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">CRP</td>
-                                    <td>42</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">42</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Rheumotide Factor (RA)</td>
-                                    <td>43</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">43</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Prothombin Factor</td>
-                                    <td>44</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">44</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Coomb's Test</td>
-                                    <td>45</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">45</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">SOdium (Na+), Potassium (K+)</td>
-                                    <td>46</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">46</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Cl (Each)</td>
-                                    <td>47</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">47</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">T3, T4, TSH</td>
-                                    <td>48</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">48</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">FT4, PRL, LH,&nbsp; FSH (Each)</td>
-                                    <td>49</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">49</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Optimal (IT) / (M.P. Antigen Test)</td>
-                                    <td>50</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">50</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">FNAC</td>
-                                    <td>51</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">51</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Biopsy H/P Examination</td>
-                                    <td>52</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">52</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Bone Marrow Test - Body Fluid (Cell Type,&nbsp; Cell Count)</td>
-                                    <td>53</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">53</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Serum Amylase</td>
-                                    <td>54</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">54</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">ADA</td>
-                                    <td>55</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">55</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">HCV</td>
-                                    <td>56</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">56</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Calcium</td>
-                                    <td>57</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">57</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">HIV</td>
-                                    <td>58</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">58</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">PAP</td>
-                                    <td>59</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">59</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">X-Ray</td>
-                                    <td>60</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">60</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Dental</td>
-                                    <td>61</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">61</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">IVU</td>
-                                    <td>62</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">62</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">HSG</td>
-                                    <td>63</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">63</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Ba-Meal</td>
-                                    <td>64</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">64</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Ba-Swallow</td>
-                                    <td>65</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">65</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Ba-FollowThrough</td>
-                                    <td>66</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">66</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">T-Tube</td>
-                                    <td>67</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">67</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Fistulogram</td>
-                                    <td>68</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">68</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Sino-Gram</td>
-                                    <td>69</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">69</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Illocical</td>
-                                    <td>70</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">70</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">ECG</td>
-                                    <td>71</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">71</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">EEG</td>
-                                    <td>72</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">72</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Abdomen USG</td>
-                                    <td>73</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">73</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">TVS USG</td>
-                                    <td>74</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">74</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Foetal USG</td>
-                                    <td>75</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">75</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Foetal Doppler USG</td>
-                                    <td>76</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">76</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Folliculometry USG</td>
-                                    <td>77</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">77</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">EchoCardioGraphy</td>
-                                    <td>78</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">78</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 20px;">Scrotum</td>
-                                    <td>79</td>
-                                    <td>30 min</td>
+                                    <td class="hide-column">79</td>
+                                    <td class="hide-column">30 min</td>
                                     <td>30 min</td>
                                     <td>Nil</td>
                                 </tr>
@@ -844,24 +844,24 @@
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h4>Donec quis turpis vel</h4>
+                        <h4>Important links</h4>
                         <ul class="footer-links">
                             <li><a href="#">Proin laoreet volutpat</a></li>
                             <li><a href="#">Aenean tincidunt est</a></li>
                         </ul>
-                        <h4>Nulla cursus finibus</h4>
+                        <h4>Career &amp; Jobs</h4>
                         <ul class="footer-links">
                             <li><a href="#">Curabitur elementum odio</a></li>
                             <li><a href="#">Proin condimentum ac</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h4>Nullam ut rutrum elit</h4>
+                        <h4>Book an appointment</h4>
                         <ul class="footer-links">
                             <li><a href="#">Praesent gravida</a></li>
                             <li><a href="#">Praesent egestas</a></li>
                         </ul>
-                        <h4>Ut eget feugiat ante</h4>
+                        <h4>Contact US</h4>
                         <ul class="footer-links">
                             <li><a href="#">Etiam ornare vestibulum</a></li>
                             <li><a href="#">Donec tincidunt tempus</a></li>
@@ -878,7 +878,7 @@
                 </div>
                 <div class="d-inline-block legal-links">
                     <div class="d-inline-block item">
-                        <h5>Privacy Policy</h5>
+                        <h5><a href="privacy-policy.html" style="color: #2c368b;">Privacy Policy</a></h5>
                     </div>
                     <div class="d-inline-block item">
                         <h5>Terms of Use</h5>
@@ -897,6 +897,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
