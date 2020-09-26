@@ -968,6 +968,19 @@ html {
 #privacy-policy h2 {
   font-family: monospace;
   font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 60px;
+}
+
+#dhanwantari-text-area {
+  background-color: rgba(255,255,255,0.48);
+}
+
+@media (min-width: 1200px) {
+  #dhanwantari-text-area {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    background-color: rgba(255,255,255,0.55);
+  }
 }
 
 .bill-header {
