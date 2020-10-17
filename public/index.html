@@ -1,80 +1,931 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bikshan Diagnostic Centre</title>
+    <meta name="theme-color" content="#2c368b">
+    <meta property="og:description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kinds of diagnostic tests like E.E.G, E.C.G etc are performed here with care &amp; accuracy.">
+    <meta name="twitter:image" content="assets/img/Biskhan%20Logo%20With%20Design%20Element_JPEG.jpg">
+    <meta name="twitter:title" content="Bikshan Diagnostic Centre">
+    <meta name="twitter:card" content="summary">
+    <meta name="description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kind of diagnostic tests are performed with care &amp; accuracy.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bikshan Diagnostic Centre">
+    <meta property="og:image" content="assets/img/Biskhan%20Logo%20With%20Design%20Element_JPEG.jpg">
+    <meta name="twitter:description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kinds of diagnostic tests like E.E.G, E.C.G etc are performed here with care &amp; accuracy.">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.21.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.21.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/7.21.1/firebase-performance.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<body style="background-size: cover;background-repeat: no-repeat;margin-top: 0px;"><nav class="navbar shadow navbar-light sticky-top navbar-expand-md navigation-clean">
+    <div class="container">
+        <button
+            data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <a class="navbar-brand" href="#"><span style="color: #e1342e; font-size: 20px;display: block;"><img class="d-inline" src="assets/img/Logo%20Icon%20With%20Colour_.PNG" style="width: 33px;margin-right: -4px;padding-bottom: 0px;margin-bottom: -10px;margin-top: -7px;padding-top: 2px;" /><span style="font-family: vulgar_displayregular">BIKSHAN </span></span><span style="font-size: 12px;display: block;margin-top: -5px;color: rgb(51,48,48);font-style: italic;padding-left: 2px;font-family: apple-system;">we care for your betterment</span></a>
+        
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="Dhanwantari.html">Dhanwantari</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="index.html#contact-us">Contact Us</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="index.html#all-tests">All Tests</a></li>
+                    <li class="d-none d-md-inline"><img src="assets/img/24-7-bikshan.png" style="width: 70px; margin-left:20px; margin-top:-10px; margin-bottom:-10px; margin-right:10px" /></li>
+                </ul>
+            </div><button class="btn btn-secondary" type="button" style="background-color: #2c368b;border-radius: 10px;"><i class="fa fa-phone" style="padding-right: 6px;"></i><a href="tel:+91-9932817105" style="color: rgb(255,255,255);">Call Us</a></button></div>
+</nav>
+    <section id="carousel">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item">
+                    <div class="jumbotron pulse animated hero-nature carousel-hero" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">
+                        <h2 class="hero-title" style="font-family: vulgar_displayregular;">WELCOME TO&nbsp;</h2>
+                        <h1 class="hero-title" style="font-family: vulgar_displayregular;color: #2c368b;">THE BEtter Future</h1>
+                        <h4 class="hero-title" style="font-family: Amaranth, sans-serif;color: #141518;margin-bottom: 25px;"><strong>More than 150 types of tests with accurate results, whenever you need. Available 24/7 at your service</strong><br></h4>
+                        <p><a class="btn btn-secondary hero-button plat" role="button" data-bs-hover-animate="pulse" href="#all-tests" style="background-color: #2c368b;padding-right: 30px;padding-left: 30px;">See what tests are available</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="jumbotron pulse animated hero-photography carousel-hero" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">
+                        <h2 class="hero-title" style="font-family: vulgar_displayregular;">WELCOME TO&nbsp;</h2>
+                        <h1 class="hero-title" style="font-family: vulgar_displayregular;color: #2c368b;">THE BRAND OF TRUST</h1>
+                        <h4 class="hero-title" style="font-family: Amaranth, sans-serif;color: #141518;margin-bottom: 25px;"><strong>More than a Million of medical tests have been done in our world class Lab since year 1998</strong></h4>
+                        <p><a class="btn btn-secondary hero-button plat" role="button" data-bs-hover-animate="pulse" href="about-us.html" style="background-color: #2c368b;padding-right: 30px;padding-left: 30px;">Know more about us</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="jumbotron pulse animated hero-technology carousel-hero" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">
+                        <h2 class="hero-title" style="font-family: vulgar_displayregular;">WELCOME TO&nbsp;</h2>
+                        <h1 class="hero-title" style="font-family: vulgar_displayregular;color: #2c368b;">BIKSHAN DIAGNOSTIC CENTRE</h1>
+                        <h4 class="hero-title" style="font-family: Amaranth, sans-serif;color: #141518;margin-bottom: 25px;"><strong>The No 1 Diagnostic Centre in Kalna, Purba Burdhaman. Fully Computerised With Auto-analyser</strong><br></h4>
+                        <p><a class="btn btn-secondary hero-button plat" role="button" data-bs-hover-animate="pulse" href="#contact-us" style="background-color: #2c368b;padding-right: 30px;padding-left: 30px;">Get a Call back</a></p>
+                    </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left" style="color: transparent;"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1"
+                    role="button" data-slide="next"><i class="fa fa-chevron-right" style="color: transparent;"></i><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+            </ol>
+        </div>
+    </section>
+    <section id="first-group" style="background-image: url(&quot;assets/img/Bikshan-background.svg&quot;);background-size: cover;">
+        <section id="why-us" style="margin-top: -10px;">
+            <div class="row space-rows">
+                <div class="col">
+                    <div class="card cards-shadown cards-hover" data-aos="flip-left" data-aos-duration="950">
+                        <div class="card-header" style="background-image: url(&quot;assets/img/26996.jpg&quot;);background-size: cover;background-color: rgb(255,255,255);"><span class="space"><a href="#"><i class="fa fa-gears" data-bs-hover-animate="swing" id="download-icon" style="background-color: #ffffff;"></i></a></span>
+                            <div class="cardheader-text">
+                                <h4 id="heading-card">Best In Class Machinery</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardbody-sub-text" style="font-size: 15px;">Get the benefits of our world-class equipments like&nbsp;<strong>Advanced digital x-ray</strong>, <strong>ECO</strong>,&nbsp;<strong>U.S.G with 4d colour doppler</strong>, <strong>E.E.G with digital 24 channels</strong> &amp;
+                                many more&nbsp;at the same cost of other diagnostic centre's with average to lower grade machinery.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card cards-shadown cards-hover" data-aos="slide-right" data-aos-duration="950">
+                        <div class="card-header" style="background-image: url(&quot;assets/img/26996.jpg&quot;);background-size: cover;background-color: rgb(255,255,255);"><span class="space"><a href="#"><i class="fa fa-smile-o" data-bs-hover-animate="swing" id="download-icon" style="background-color: #ffffff;"></i></a></span>
+                            <div class="cardheader-text">
+                                <h4 id="heading-card">Friendliest Staff</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardbody-sub-text" style="font-size: 15px;">Our staffs are working professional with more than <strong>25 years of experience</strong> in this field.&nbsp;Being <strong>kind</strong>, <strong>caring </strong>&amp; <strong>respectful </strong>to customers as well as making
+                                sure that they are satisfied with the service is in our core values and ethics.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card cards-shadown cards-hover" data-aos="flip-up" data-aos-duration="950">
+                        <div class="card-header cards-header-hover" style="background-image: url(&quot;assets/img/26996.jpg&quot;);background-size: cover;background-color: rgb(255,255,255);"><span class="space"><a href="#"><i class="fa fa-star" data-bs-hover-animate="swing" id="download-icon" style="background-color: #ffffff;"></i></a></span>
+                            <div class="cardheader-text">
+                                <h4 id="heading-card">Accurate results</h4>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text cardbody-sub-text" style="font-size: 15px;">We are proud to have a modern lab that is leveraging on the combined use of the <strong>top-rated chemicals</strong>, <strong>proven scientific methods</strong>, <strong>modern machinery</strong> &amp; <strong>experienced staff</strong>--
+                                you can rest assured on the dependency of the results.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="departments" style="margin-top: 100px;margin-bottom: 0px;">
+            <div class="container"><div class="container py-5">
+  
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <div class="p-5 bg-white rounded shadow mb-5">
+  	<h2 class="text-center" style="margin-bottom:10px">Departments </h2>
+     <hr>
+
+    <!-- Rounded tabs -->
+    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+      <li class="nav-item flex-sm-fill">
+        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Radiology</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Pathology</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Neurology</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="cardiology-tab" data-toggle="tab" href="#cardiology" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Cardiology</a>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+        <p class="text-muted">Diagnostic radiology is a medical specialisation that involves undertaking a range of imaging procedures to obtain images of the inside of the body. The diagnostic radiologist then carefully interprets these images to diagnose illness and injury.
+
+			Diagnostic radiology is at the core of clinical decision-making in modern medicine.
+
+			Diagnostic imaging tests can include
+
+			X-rays (plain radiography),
+			ECG, EEG
+			Ultrasound examinations (also known as sonography).  
+			Diagnostic radiologists know when an imaging test can help answer a question about a symptom, disease, injury or treatment and which tests will get the best result for each patient.</p>
+        <p class="text-muted mb-0">Our Radiology Department is leaded by Dr. A. Mondal , M.D Radiologist.</p>
+      </div>
+      <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+        <p class="text-muted">Pathology is a branch of medical science that involves the study and diagnosis of disease through the examination of surgically removed organs, tissues (biopsy samples), bodily fluids, and in some cases the whole body (autopsy).  Pathology also includes the related scientific study of disease processes whereby the causes, mechanisms and extent of disease are examined. Areas of study include cellular adaptation to injury, necrosis (death of living cells or tissues), inflammation, wound healing, and neoplasia (abnormal new growth of cells).  The cellular pattern of tissue samples are observed under a microscope to help determine if a sample is cancerous or non-cancerous (benign). Pathologists also employ genetic studies and gene markers in the assessment of various diseases.</p>
+        <p class="text-muted mb-0">Dr. U.K Ghosh, M.D (pathology), PGI Chandigarh & Dr K Bose, MD oversee our Pathology Department.</p>
+      </div>
+      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+        <p class="text-muted">Neurology is a branch of medicine dealing with disorders of the nervous system. It deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.</p>
+        <p class="text-muted">Our Neurology Department is lead by DR. R Bhattacharya, M.D, DM.</p>
+      </div>
+      <div id="cardiology" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+        <p class="text-muted">Cardiology deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.</p>
+        <p>All kinds of EEG & ECG are done here in our diagnostic centre with reports from Dr. SUdeb Mukherjee, one of the top cardiologist in Purba Burdhaman.
+        <p class="text-muted">The department of Cardiology is supervised by DR. Sudeb Mukherjee, M.D, DM(Cardio).</p>
+      </div>
+	  	<strong style="margin:auto; text-align:center;" >Apart from these main branches, we also have departments for Hematology & Histopathology in your service.</strong>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- End rounded tabs -->
+  </div>
+  </div>
+</div>
+        </section>
+        <section id="medical-tests" style="background-size: cover;padding-top: 0px;margin-top: -70px;">
+            <hr id="all-tests" style="color: white; opacity:0;">
+            <div class="container" id="table-container" style="margin-bottom: 100px;">
+                <div class="col-md-12 search-table-col">
+                    <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control" placeholder="Search tests by typing here.." autocomplete="on"></div><span class="counter pull-right"></span>
+                    <div class="table-responsive table-bordered shadow-lg table table-hover table-bordered results"
+                        style="max-height: 503px;">
+                        <table class="table table-bordered table-hover">
+                            <thead class="bill-header cs">
+                                <tr>
+                                    <th id="trs-hd" class="col-lg-1" style="padding-bottom: 17px;font-size: 17px;background-image: url(&quot;assets/img/26996.jpg&quot;);">TESTS AVAILABLE</th>
+                                    <th id="trs-hd" class="col-lg-2 hide-column" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Serial no</th>
+                                    <th id="trs-hd" class="col-lg-3 hide-column" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">wait time</th>
+                                    <th id="trs-hd" class="col-lg-2" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Time takes</th>
+                                    <th id="trs-hd" class="col-lg-2" style="background-image: url(&quot;assets/img/26996.jpg&quot;);">Special Requirement</th>
+                                </tr>
+                            </thead>
+                            <tbody style="background-size: cover;">
+                                <tr class="warning no-result">
+                                    <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Hemoglobin</td>
+                                    <td class="hide-column">1</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;padding-top: 20px;">TC, DC</td>
+                                    <td class="hide-column">2</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">ESR</td>
+                                    <td class="hide-column">3</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Malaria Parasites(MP)</td>
+                                    <td class="hide-column">4</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Widal Test</td>
+                                    <td class="hide-column">5</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">RBC / Platelate / Eosinophin</td>
+                                    <td class="hide-column">6</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">BT, CT</td>
+                                    <td class="hide-column">7</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Aldehyed Test</td>
+                                    <td class="hide-column">8</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">PCV</td>
+                                    <td class="hide-column">9</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Complete Hemogram</td>
+                                    <td class="hide-column">10</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Mantoux</td>
+                                    <td class="hide-column">11</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">ABO/Rh</td>
+                                    <td class="hide-column">12</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Sputam for AFB</td>
+                                    <td class="hide-column">13</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Sugar (PP) (F) / (R) Each</td>
+                                    <td class="hide-column">14</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">VDRL Test</td>
+                                    <td class="hide-column">15</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Skin Smears for AFB</td>
+                                    <td class="hide-column">16</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Seminal Fluid</td>
+                                    <td class="hide-column">17</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Urethral Smears</td>
+                                    <td class="hide-column">18</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Stool OPC (RE / ME)</td>
+                                    <td class="hide-column">19</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Vitamine D3, Vitamine B12 (Each)</td>
+                                    <td class="hide-column">20</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Stool (OPC + OBT)</td>
+                                    <td class="hide-column">21</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Urine (RE / ME)</td>
+                                    <td class="hide-column">22</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Urine,&nbsp; Stool,&nbsp; Swab, Pus</td>
+                                    <td class="hide-column">23</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">24 Hours Total Protein of Urine</td>
+                                    <td class="hide-column">24</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Absolute Eosinophilis Count</td>
+                                    <td class="hide-column">25</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">HBAC</td>
+                                    <td class="hide-column">26</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Trop-T</td>
+                                    <td class="hide-column">27</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Tiphy Dort</td>
+                                    <td class="hide-column">28</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Urine for Pregnancy</td>
+                                    <td class="hide-column">29</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Bloor Urea</td>
+                                    <td class="hide-column">30</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Cerum Creatinine</td>
+                                    <td class="hide-column">31</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serun Cholesterol</td>
+                                    <td class="hide-column">32</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Uric Acid</td>
+                                    <td class="hide-column">33</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Bilirubin</td>
+                                    <td class="hide-column">34</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum SGOT (AST) / (ALT)</td>
+                                    <td class="hide-column">35</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Alkaline Phosphate</td>
+                                    <td class="hide-column">36</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Triglycende (TG)</td>
+                                    <td class="hide-column">37</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Total Protein &amp; Albumin (Australia Antigen)</td>
+                                    <td class="hide-column">38</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Lipid Profile</td>
+                                    <td class="hide-column">39</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">LFT</td>
+                                    <td class="hide-column">40</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">ASO Titre</td>
+                                    <td class="hide-column">41</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">CRP</td>
+                                    <td class="hide-column">42</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Rheumotide Factor (RA)</td>
+                                    <td class="hide-column">43</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Prothombin Factor</td>
+                                    <td class="hide-column">44</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Coomb's Test</td>
+                                    <td class="hide-column">45</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">SOdium (Na+), Potassium (K+)</td>
+                                    <td class="hide-column">46</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Cl (Each)</td>
+                                    <td class="hide-column">47</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">T3, T4, TSH</td>
+                                    <td class="hide-column">48</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">FT4, PRL, LH,&nbsp; FSH (Each)</td>
+                                    <td class="hide-column">49</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Optimal (IT) / (M.P. Antigen Test)</td>
+                                    <td class="hide-column">50</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">FNAC</td>
+                                    <td class="hide-column">51</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Biopsy H/P Examination</td>
+                                    <td class="hide-column">52</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Bone Marrow Test - Body Fluid (Cell Type,&nbsp; Cell Count)</td>
+                                    <td class="hide-column">53</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Serum Amylase</td>
+                                    <td class="hide-column">54</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">ADA</td>
+                                    <td class="hide-column">55</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">HCV</td>
+                                    <td class="hide-column">56</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Calcium</td>
+                                    <td class="hide-column">57</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">HIV</td>
+                                    <td class="hide-column">58</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">PAP</td>
+                                    <td class="hide-column">59</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">X-Ray</td>
+                                    <td class="hide-column">60</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Dental</td>
+                                    <td class="hide-column">61</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">IVU</td>
+                                    <td class="hide-column">62</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">HSG</td>
+                                    <td class="hide-column">63</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Ba-Meal</td>
+                                    <td class="hide-column">64</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Ba-Swallow</td>
+                                    <td class="hide-column">65</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Ba-FollowThrough</td>
+                                    <td class="hide-column">66</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">T-Tube</td>
+                                    <td class="hide-column">67</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Fistulogram</td>
+                                    <td class="hide-column">68</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Sino-Gram</td>
+                                    <td class="hide-column">69</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Illocical</td>
+                                    <td class="hide-column">70</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">ECG</td>
+                                    <td class="hide-column">71</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">EEG</td>
+                                    <td class="hide-column">72</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Abdomen USG</td>
+                                    <td class="hide-column">73</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">TVS USG</td>
+                                    <td class="hide-column">74</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Foetal USG</td>
+                                    <td class="hide-column">75</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Foetal Doppler USG</td>
+                                    <td class="hide-column">76</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Folliculometry USG</td>
+                                    <td class="hide-column">77</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">EchoCardioGraphy</td>
+                                    <td class="hide-column">78</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px;">Scrotum</td>
+                                    <td class="hide-column">79</td>
+                                    <td class="hide-column">30 min</td>
+                                    <td>30 min</td>
+                                    <td>Nil</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="jumbotron jumbotron-fluid shadow-lg jumbotron-main" style="height: 600px;background-image: url(&quot;assets/img/Dhanwantari_checkup.png&quot;);"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <div id="particles-js">
+	<canvas class="particles-js-canvas-el" width="1409" height="400" style="width: 100%; height: 100%; background-color:white;"></canvas>
+	</div>
+        <div class="container center-vertically-holder" style="margin-top:-20px;">
+            <div class="row center-vertically">
+                <div class="col-md-8 offset-sm-0 offset-md-2 text-center" id="dhanwantari-text-area" style="margin-top: 100px;margin-bottom: 100px;padding-bottom: 20px;padding-top: 50px;">
+                    <h5>Let us take care of your medicines &amp; find the best doctors for you<br></h5>
+                    <h1 style="font-family: vulgar_displayregular;">DHANWANTARI MEDICAL HALL</h1>
+                    <p style="margin-top: 20px;font-family: Amaranth, sans-serif;font-weight: normal;font-style: normal;letter-spacing: 0px;">A part of Bikshan family. Get the appointments of Veterian doctors &amp; buy medicines at the most affordable price<br></p>
+                    <p style="padding-bottom: 20px;"><a class="btn btn-secondary" role="button" href="Dhanwantari.html" style="background-color: #2c368b;">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="second-group" style="background-image: url(&quot;assets/img/Bikshan-background.jpg&quot;);margin-top: 0px;height: auto;">
+        <section class="wrapper-numbers" style="background-size: contain;background-color: rgba(255,255,255,0.74);background-image: url(&quot;none&quot;);margin-top: 50px;margin-bottom: 100px;padding-bottom: 0px;height: auto;">
+            <div class="container">
+                <div class="row countup text-center" style="background-size: cover;background-repeat: no-repeat;background-position: 20%;">
+                    <div class="col-md-8 offset-md-2 header-numbers">
+                        <h1 id="counter-headeing">Our expertise in your service, everytime you need it</h1>
+                        <p>We have served over a million people with our services since early 1998</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 column">
+                        <p><i class="fa fa-thermometer" aria-hidden="true"></i></p>
+                        <p> <span class="count">1000000</span></p>
+                        <h2>Over a million tests</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 column">
+                        <p><i class="far fa-smile-beam" aria-hidden="true"></i></p>
+                        <p> <span class="count">1000000</span></p>
+                        <h2>Over a million happy customers</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 column">
+                        <p><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></p>
+                        <p> <span class="count">1000000</span></p>
+                        <h2>Over a million life saved</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3 column">
+                        <p><i class="fas fa-dharmachakra" aria-hidden="true"></i></p>
+                        <p> <span class="count">1000000</span></p>
+                        <h2>Over a million blessings</h2>
+                    </div>
+                    <div class="col">
+                        <hr id="contact-us" style="color: white; opacity:0;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container" id="info-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center" style="color: #2c368b;">Contact Us</h2>
+                        <hr>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6" id="contact-box">
+                        <p id="contact-text" style="background-color: rgba(255,255,255,0.17);">For any kind of assistance &amp; query, please feel free to contact us in whatever way you are comfortable. We are happy to help you, available 24/7 at your service.</p>
+                        <div class="info-box"><i class="fa fa-map-marker my-info-icons"></i><span class="text-uppercase text-info">Address: </span><span class="text-capitalize">S.T.K.K. Road, Baidyapur More ,Kalna ,Burdwan, West Bengal,INDIA, Pin: 713409<br></span></div>
+                        <div
+                            class="info-box"><i class="fa fa-envelope my-info-icons"></i><span class="text-uppercase text-info">Email: </span><span>contact@bikshan.com</span></div>
+                    <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span>+91&nbsp;9932817105<br></span></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 site-form">
+                    <form id="my-form" method="post">
+                        <h5 style="margin-top: -23px;color: #e1342e;margin-bottom: 18px;"></h5>
+                        <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" required=""></div>
+                        <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name" required=""></div>
+                        <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input class="form-control" type="tel" id="phonenumber" name="phonenumber" required="" placeholder="Phone"></div>
+                        <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" id="email" name="email" required="" placeholder="Email"></div>
+                        <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" id="messages" name="messages" required="" placeholder="Message" rows="8"></textarea>      <div id="reCap" style="margin-top:10px;  " class="g-recaptcha" data-sitekey="6LcXZNgZAAAAAFwirQGwPWyHP2ljJMGa0Y1XiztC"></div>
+</div><button class="btn btn-light btn-lg"
+                            id="form-btn" type="submit" style="background-color: #2c368b;color: rgb(255,255,255);"><span class="spinner-border spinner-border-sm d-none" role="status" id="loading" style="margin: 1px;margin-right: 7px;"></span>SEND </button>
+                        <h6
+                            id="error-message" class="d-none" style="color: #e1342e;border: 1px solid black;margin-top: 7px;padding: 3px;">Something went wrong! Please try again.</h6>
+                            <h6 id="sent-message" class="d-none" style="color: #2cc229;border: 1px solid black;margin-top: 7px;padding: 3px;">Your meassage has been sent! Thank you.</h6>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+        </section>
+    </section>
+    <section class="shadow-lg" id="google0maps" style="padding: 20px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.7476558896865!2d88.35129061494386!3d23.21586518485556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8e50e2d9830df%3A0xd5f7e51d15607bf0!2sBIKSHAN%20DIAGNOSTIC%20CENTER!5e0!3m2!1sen!2sin!4v1599687248538!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></section>
+    <section id="footer-section">
+        <footer class="page-footer" style="background-image: url(&quot;assets/img/26996-rotate.jpg&quot;);background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <h4>Bikshan Diagnostic Centre</h4>
+                        <p>The No 1 diagnostic center in Kalna, Purba Burdhaman</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>Dhanwantari</h4>
+                        <p>The No 1 diagnostic center in Kalna, Purba Burdhaman.<br></p>
+                        <ul class="footer-links">
+                            <li style="margin-top: -12px;margin-right: 0px;"><a href="Dhanwantari.html">Click here to know more!</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>Important links</h4>
+                        <ul class="footer-links">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="#contact-us">Contact us</a></li>
+                        </ul>
+                        <h4>Career &amp; Jobs</h4>
+                        <p>Currently no jobs available. Stay tuned!</p>
+                        <ul class="footer-links"></ul>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>Book an appointment</h4>
+                        <ul class="footer-links">
+                            <li><a href="#contact-us">Get a callback</a></li>
+                        </ul>
+                        <h4>Contact us</h4>
+                        <p>S.T.K.K. Road, Baidyapur More ,Kalna ,Burdwan, West Bengal,INDIA, Pin: 713409<br></p>
+                    </div>
+                </div>
+                <p>All information provided here are not absolute, They may vary depending on the situation.</p>
+                <hr>
+                <div class="footer-legal">
+                    <div class="float-md-right region"><a href="https://uniclick.in" style="color: #2c368b;font-family: vulgar_displayregular;font-weight: normal;font-style: normal;font-size: 9px;" target="_blank"><img src="assets/img/Bikshan-India-flag.png" style="width: 53px;">MADE WITH&nbsp;<i class="fas fa-heart" style="color: #e1342e;"></i>&nbsp;IN INDIA BY UNICLICK SOLUTIONS</a></div>
+                    <div
+                        class="d-inline-block copyright">
+                        <p class="d-inline-block">Copyright © 2020. All rights reserved.<br></p>
+                </div>
+                <div class="d-inline-block legal-links">
+                    <div class="d-inline-block item">
+                        <h5><a href="privacy-policy.html" style="color: #2c368b;">Privacy Policy</a></h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5><a href="terms-of-services.html" style="color: #2c368b;">Terms of Services</a></h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5><a href="terms-of-services.html" style="color: #2c368b;">Legal</a></h5>
+                    </div>
+                    <div class="d-inline-block item">
+                        <h5><a href="terms-of-services.html" style="color: #2c368b;">License</a></h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>

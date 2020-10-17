@@ -4,10 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bikshan Diagnostic centre</title>
-    <meta property="og:image" content="assets/img/Logo%20Icon%20With%20Colour_.PNG">
+    <title>Bikshan Diagnostic Centre</title>
+    <meta name="theme-color" content="#2c368b">
+    <meta property="og:description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kinds of diagnostic tests like E.E.G, E.C.G etc are performed here with care &amp; accuracy.">
+    <meta name="twitter:image" content="assets/img/Biskhan%20Logo%20With%20Design%20Element_JPEG.jpg">
+    <meta name="twitter:title" content="Bikshan Diagnostic Centre">
+    <meta name="twitter:card" content="summary">
+    <meta name="description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kind of diagnostic tests are performed with care &amp; accuracy.">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Bikshan Diagnostic Centre">
+    <meta property="og:image" content="assets/img/Biskhan%20Logo%20With%20Design%20Element_JPEG.jpg">
+    <meta name="twitter:description" content="The best diagnostic centre in Kalna, Purba Burdhaman, fully computerised with auto analyser. All kinds of diagnostic tests like E.E.G, E.C.G etc are performed here with care &amp; accuracy.">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-icon-192x192.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -823,13 +837,19 @@
                     <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Phone: </span><span>+91&nbsp;9932817105<br></span></div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 site-form">
-                    <form id="my-form">
-                        <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name"></div>
-                        <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name"></div>
+                    <form id="my-form" method="post">
+                        <h5 style="margin-top: -23px;color: #e1342e;margin-bottom: 18px;"></h5>
+                        <div class="form-group"><label class="sr-only" for="firstname">First Name</label><input class="form-control" type="text" id="firstname" name="firstname" placeholder="First Name" required=""></div>
+                        <div class="form-group"><label class="sr-only" for="lastname">Last Name</label><input class="form-control" type="text" id="lastname" name="lastname" placeholder="Last Name" required=""></div>
                         <div class="form-group"><label class="sr-only" for="phonenumber">Phone Number</label><input class="form-control" type="tel" id="phonenumber" name="phonenumber" required="" placeholder="Phone"></div>
                         <div class="form-group"><label class="sr-only" for="email">Email Address</label><input class="form-control" type="text" id="email" name="email" required="" placeholder="Email"></div>
-                        <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" name="messages" required="" placeholder="Message" rows="8"></textarea></div><button class="btn btn-light btn-lg" id="form-btn" type="submit"
-                            style="background-color: #2c368b;color: rgb(255,255,255);">SEND </button></form>
+                        <div class="form-group"><label class="sr-only" for="messages">Last Name</label><textarea class="form-control" id="messages" name="messages" required="" placeholder="Message" rows="8"></textarea>      <div id="reCap" style="margin-top:10px;  " class="g-recaptcha" data-sitekey="6LcXZNgZAAAAAFwirQGwPWyHP2ljJMGa0Y1XiztC"></div>
+</div><button class="btn btn-light btn-lg"
+                            id="form-btn" type="submit" style="background-color: #2c368b;color: rgb(255,255,255);"><span class="spinner-border spinner-border-sm d-none" role="status" id="loading" style="margin: 1px;margin-right: 7px;"></span>SEND </button>
+                        <h6
+                            id="error-message" class="d-none" style="color: #e1342e;border: 1px solid black;margin-top: 7px;padding: 3px;">Something went wrong! Please try again.</h6>
+                            <h6 id="sent-message" class="d-none" style="color: #2cc229;border: 1px solid black;margin-top: 7px;padding: 3px;">Your meassage has been sent! Thank you.</h6>
+                    </form>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -901,6 +921,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
 
